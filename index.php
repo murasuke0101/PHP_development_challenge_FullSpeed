@@ -69,7 +69,7 @@ try
     
     //検索機能
     echo '検索';
-    echo '<form action="result2.php" method="post">';
+    echo '<form action="search_result.php" method="post">';
         echo '<input type="text" name="search_word" style="font-size: 16px; margin-bottom: 15px">';
         echo ' ';
         echo '<input type="submit" name="search" style="font-size: 16px;margin-bottom: 15px" value="検索">';
