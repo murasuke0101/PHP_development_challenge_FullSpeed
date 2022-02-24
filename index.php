@@ -49,13 +49,13 @@ try
                           
     if ($nowPage == 1)
     {
-        $select->bindValue(":start",$nowPage -1,PDO::PARAM_INT);
-        $select->bindValue(":max",max_view,PDO::PARAM_INT);
+        $select->bindValue(":start", $nowPage -1,PDO::PARAM_INT);
+        $select->bindValue(":max", max_view,PDO::PARAM_INT);
     }
     else 
     {
-        $select->bindValue(":start",($nowPage -1 ) * max_view,PDO::PARAM_INT);
-        $select->bindValue(":max",max_view,PDO::PARAM_INT);
+        $select->bindValue(":start", ($nowPage -1 ) * max_view,PDO::PARAM_INT);
+        $select->bindValue(":max", max_view,PDO::PARAM_INT);
     }
 
     $select->execute();
@@ -106,7 +106,6 @@ try
                     echo '</form>';
                 echo '</tr>';
             }
-        
     echo '</table>';
 
     //ページ番号
