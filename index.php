@@ -119,10 +119,13 @@ try
         echo "<span style='padding: 5px;'> </span>";
     }
     
-    for ($n = 1; $n <= $totalPage; $n ++){
+    for ($n = 1; $n <= $totalPage; $n ++)
+    {
         if ($n == $nowPage){
             echo "<span style='padding: 5px;'>$nowPage</span>";
-        }else{
+        }
+	else
+	{
             echo "<a href='./index.php?page_no=$n' style='padding: 5px;'>$n</a>";
         }
     }
