@@ -47,6 +47,7 @@ try
     //ToDoリストの情報取得
     $select = $dbh->prepare("SELECT * FROM mst_todo ORDER BY id ASC LIMIT :start,:max");
                           
+    //:startと:maxに値を代入	
     if ($nowPage == 1)
     {
         $select->bindValue(":start", $nowPage -1,PDO::PARAM_INT);
