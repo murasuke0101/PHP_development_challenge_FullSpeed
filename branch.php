@@ -7,6 +7,7 @@ if(isset($_POST['edit']) == true)
 	header('Location: edit.php?edit='.$id);
 	exit();
 }
+
 if(isset($_POST['delete']) == true)
 {
 	$id = $_POST['delete'];
@@ -14,10 +15,12 @@ if(isset($_POST['delete']) == true)
 	header('Location: delete.php?delete='.$id);
 	exit();
 }
+
 if(isset($_POST['search_word']) == true)
 {
     $search = $_POST['search_word'];
     $search = htmlspecialchars($search,ENT_QUOTES,'UTF-8');
     header('Location: search_result.php?search='.$search);
 }
+
 ?>
